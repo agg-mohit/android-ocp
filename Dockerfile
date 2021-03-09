@@ -121,7 +121,8 @@ RUN mkdir /app
 WORKDIR /app
 
 
-COPY files/ /app/
+COPY app-debug.apk /app/
+COPY docker-entrypoint.sh /app/
 
 RUN chmod +x -R /app/docker-entrypoint.sh
 
